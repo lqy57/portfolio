@@ -167,46 +167,19 @@ section{
     background-color: lightgreen;
 }
 
-
-@media (max-width: 900px) {
-    .menu {
-        display: none;
-    }
-
+@media (max-width: 414px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
     }
-
-    .logo {
-        margin-bottom: 1em;
+    .logo a {
+      font-size: 1.2em;
     }
-
-    #Bio .column {
-        flex-direction: column;
+    .menu {
+      display: none;
     }
-
-    #Bio .column .img {
-        width: 50%;
-        height: auto;
-    }
-}
-
-@media (max-width: 450px) {
-    .header h1 {
-      font-size: 20px;
-    }
-  
-    .container-fluid {
-      max-width: 90%;
-    }
-
-    .column.img img {
-        width: 50%;
-        height: auto;
   }
-}
-
-
-
 
