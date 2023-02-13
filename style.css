@@ -115,7 +115,7 @@ section{
 .slider {
     width: 500px;
     height: 300px;
-    background-color: yellow;
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -166,3 +166,30 @@ section{
     border-radius: 50px;
     background-color: lightgreen;
 }
+
+@media (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+
+    #Bio .column {
+        flex-direction: column;
+    }
+
+    #Bio .column .img {
+        margin: 2em auto;
+        width: 50%;
+    }
+}
+
+
+
