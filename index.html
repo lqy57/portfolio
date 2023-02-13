@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larry Yang Portfolio</title>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -28,7 +29,7 @@
     </section>
     <section id="Bio">
         <div class="container-fluid">
-            <div class="row">
+            <div class="column">
                 <div class="column">
                     <h1>About Me</h1>
                 </div>
@@ -50,10 +51,57 @@
             </div>
         </div>
     </section>
-    <section id="Resume">Resume Section</section>
-    <section id="Projects">Projects Section</section>
-    <div class="button">
-    <a href="#Home"><i class="fas fa-arrow-up"></i></a>
-    </div>
+    <section id="Resume">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row-sm bordered-box">
+                    <h1>Tutor</h1>
+                    <p>
+                        I started working as a tutor at the start of my senior year in high school. I taught 
+                        math courses ranging from elementary school math all the way to AP Calculus BC.
+                    </p>
+                </div>
+                <div class="row-sm bordered-box">
+                    <h1>Food Industry</h1>
+                    <p>
+                        I have worked as a cashier and waiter in different restaraunts part-time while also
+                        going to college.
+                    </p>
+                </div>
+                <div class="row-sm bordered-box">
+                    <h1>Student</h1>
+                    <p>
+                        For the past 3 years, I have been a student at the Univesrity of Texas at Austin. I have 
+                        been studying business while also aiming towards a certificate in computer science.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="images/github.jpeg" class="slide" width="500" height="300" />
+              <img src="images/ga.png" class="slide" width="500" height="300" />
+              <img src="images/college.jpeg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <h1>Projects</h1>
+        <p>I haven't worked on many projects yet, but I consider both GA Bootcamp and College projects in my life.</p>
+        <div class="button">
+            <a href="https://github.com/lqy57?tab=repositories"><button type="button" class="btn btn-dark">Github</button></a>
+        </div>
+        <div class="button">
+            <a href="https://www.linkedin.com/in/lawrence-yang-055586191/"><button type="button" class="btn btn-primary">Linkedin</button></a>
+        </div>
+    </section>
 </body>
 </html>

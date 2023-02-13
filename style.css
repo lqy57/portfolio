@@ -84,15 +84,19 @@ section{
 #Bio .column img {
     width: 450px;
     height: 600px;
-    text-align: left;
+    float: left;
+    margin-right: 20px;
 }
 
 #Resume{
   background: #e6e6e6;
 }
 
-#Latest{
-  background: #fff;
+.bordered-box {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
 }
 
 #Projects{
@@ -100,14 +104,65 @@ section{
 }
 
 .button a{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  display: inline-block;
   color: #fff;
-  background: #2980b9;
   padding: 7px 12px;;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
 }
- 
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+.image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slide-1:target ~ .image-container {
+    left: 0px;
+}
+
+#slide-2:target ~ .image-container {
+    left: -500px;
+}
+
+#slide-3:target ~ .image-container {
+    left: -1000px;
+}
+
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+}
