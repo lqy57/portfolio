@@ -167,6 +167,7 @@ section{
     background-color: lightgreen;
 }
 
+
 @media (max-width: 900px) {
     .menu {
         display: none;
@@ -186,10 +187,26 @@ section{
     }
 
     #Bio .column .img {
-        margin: 2em auto;
         width: 50%;
+        height: auto;
     }
 }
+
+@media (max-width: 450px) {
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .container-fluid {
+      max-width: 90%;
+    }
+
+    .column.img img {
+        width: 50%;
+        height: auto;
+  }
+}
+
 
 
 
